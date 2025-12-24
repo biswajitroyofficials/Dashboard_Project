@@ -1,20 +1,23 @@
-<!-- TOC -->
-
+<img src="https://github.com/SnowY4you/Dashboard_Project/blob/a36a91a64b562c4164f3c8c71d15428e4fd0794e/Media/Dashboard.png" width="400">
 
 # Service Governance Dashboard
 
 A professional **SLA Compliance Monitoring** and **KPI Visualization** platform built with Python and Plotly Dash. This project demonstrates advanced data engineering, ITIL-aligned governance, and the orchestration of complex service metrics into actionable business intelligence.
 
 ---
+
 ## 📊 Overview
 
 In IT service management, without a structured approach, critical problems take too long to resolve. This dashboard serves as a "Technical Bridge" between raw incident data and executive decision-making. By automating the tracking of Service Level Agreements (SLAs), it ensures that business continuity plans are backed by real-time data rather than assumptions.
 
 ---
-## Version 
+
+## Version
+
 **1.0**
 
 ---
+
 ## 🎯 Objectives & Key Features
 
 ### 1. SLA Compliance by Priority
@@ -40,6 +43,7 @@ Uses a **speedometer-style gauge** to track a 95% target.
 - **Delta Tracking**: Real-time indicators showing if performance improved or declined compared to the previous month.
 
 ---
+
 ## 🛠️ Technical Implementation & Architecture
 
 ### System Integration Map
@@ -63,6 +67,7 @@ end
 - **Data Masking (PII Protection)**: Includes a specialized script that scrubs Personally Identifiable Information using Regex (`(?i)company_name`) and generates standardized incident keys for data ethics compliance.
 
 ---
+
 ### 🚀 Key Strengths & Skills Demonstrated
 
 - **Technical Literacy**: Programmatic manipulation of large `.xlsx` datasets and ServiceNow metrics.
@@ -71,6 +76,7 @@ end
 - **Vendor Audit Readiness**: Includes a `Vendor_Audit_Template.md` for Service Improvement Plans (SIP) when vendors fall below targets.
 
 ---
+
 ### 📁 Project Structure
 
 ```
@@ -91,38 +97,43 @@ Dashboard_Project
 ```
 
 ---
+
 ### :warning: Disclaimer
 
 All data utilized in this project is mock data generated for demonstration purposes. No real-world company data or sensitive information was used in the creation of this dashboard.
 
 ---
-### :badger: Getting Started
 
+### :badger: Getting Started
 
 #### Prerequisites
 
 - Python 3.9+
 - An Excel file named `All inc 6 months.xlsx` placed in the /data folder.
 
-
 #### Installation & Setup
+
 1. **Clone the repository**:
+
 ```
 git clone https://github.com/your-username/Dashboard_Project.git
 cd Dashboard_Project
 ```
 
 2. **Install dependencies**:
+
 ```
 pip install -r requirements.txt
 ```
 
 3. **Run the Data Masking script (Optional)**: If you need to anonymize new raw data before launching the dashboard:
+
 ```
 python scripts/data_cleaner.py
 ```
 
 4. Launch the Dashboard:
+
 ```
 python dashboard_app.py
 ```
@@ -130,15 +141,18 @@ python dashboard_app.py
 The dashboard will be available at `http://127.0.0.1:8050/` in your web browser.
 
 ---
+
 ## :unicorn: Author
+
 **Sandra van Buggenum**
 
 - GitHub: [SnowY4you](https://github.com/SnowY4you)
 - LinkedIn: [Sandra van Buggenum](https://www.linkedin.com/in/sandravanbuggenum)
 
 ---
+
 ## Changelog
 
-
 ### 1.0.0 – 2025-12-24
+
 - Initial release
